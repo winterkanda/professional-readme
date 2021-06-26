@@ -18,3 +18,5 @@ const writeFile = readMeContent => {
     });
 
 };
+
+module.exports = writeFile;

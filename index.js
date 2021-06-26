@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
-const { writeFile } = require('./utils/generate-readme');
+const writeFile = require('./utils/generate-readme');
 const generateReadme = require('./src/readme-template');
 
 // TODO: Create an array of questions for user input
