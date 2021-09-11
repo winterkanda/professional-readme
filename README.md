@@ -45,7 +45,7 @@ Open to all
     
 # Testing Instructions
 
-To generate the professional readme, start through terminal/command line to fill out the prompts given. 
+To generate the professional readme, start this application using node index.js through your terminal/command line to fill out the prompts given. 
 
 &nbsp;  
     
