@@ -20,9 +20,14 @@ const promptUser = () => {
           }
         },
         {
+            type: 'input',
+            name: 'description',
+            message: 'What Would you like the description of your project to be?',
+        },
+        {
             type: 'confirm',
-            name: 'confirmDescription',
-            message: 'Would you like to enter a description of your project?',
+            name: 'confirmInstallation',
+            message: 'Would you like to enter usage instructions?',
             default: true
         },
         {
@@ -71,7 +76,7 @@ const promptUser = () => {
         },
         {
             type: 'confirm',
-            name: 'confirmcontributing',
+            name: 'confirmContributing',
             message: 'Did you want to contribution guidelines?',
             default: true
         },

@@ -6,7 +6,7 @@ const generateDescription = descriptionText => {
     }
 
     return `
-    ${descriptionText}
+${descriptionText}
     `;
 };
 
@@ -16,7 +16,7 @@ const generateInstallation = installationText => {
     }
 
     return `
-    ${installationText}
+${installationText}
     `;
 };
 
@@ -26,7 +26,7 @@ const generateUsage = usageText => {
     }
 
     return `
-    ${usageText}
+${usageText}
     `;
 };
 
@@ -36,7 +36,7 @@ const generateContributing = contributingText => {
     }
 
     return `
-    ${contributingText}
+${contributingText}
     `;
 };
 
@@ -46,7 +46,7 @@ const generateTesting = testingText => {
     }
 
     return `
-    ${testingText}
+${testingText}
     `;
 };
 
@@ -57,52 +57,55 @@ module.exports = templateData => {
 
     return `
 
-    # ${title}
-    ![badge](https://img.shields.io/badge/license-${licenses}-green)
+# ${title}
+![badge](https://img.shields.io/badge/license-${licenses}-green)
 
 
-    ## Table of Contents  
-    [Description](#description)  
-    [Installation](#installation)  
-    [Usage](#usage)  
-    [Licenses](#licenses)  
-    [Testing](#testing)  
-    [Questions](#questions)  
+## Table of Contents  
+[Description](#description)  
+[Installation](#installation)  
+[Usage](#usage)  
+[Licenses](#licenses)  
+[Testing](#testing)  
+[Questions](#questions)  
     
-    <a name="description"/>
+<a name="description"/>
 
-    ## Description
-    ${generateDescription(description)}
+## Description
+${generateDescription(description)}
     
-    <a name="installation"/>
+<a name="installation"/>
     
-    ## Installation Instructions
-    ${generateInstallation(installation)}
+## Installation Instructions
+${generateInstallation(installation)}
     
-    <a name="usage"/>
+<a name="usage"/>
     
-    ## Usage Instructions
-    ${generateUsage(usage)}
+## Usage Instructions
+${generateUsage(usage)}
     
-    <a name="licenses"/>
+<a name="licenses"/>
     
-    ## Licenses Used
-    ${licenses}.
-    <a name="contributions"/>
+## Licenses Used
+${licenses}.
 
-    ## Contribution Guidelines
-    ${generateContributing(contributing)}
-    <a name="testing"/>
+<a name="contributions"/>
+
+## Contribution Guidelines
+${generateContributing(contributing)}
+
+<a name="testing"/>
     
-    ## Testing Instructions
-    ${generateTesting(testing)}
-    <a name="questions"/>
+## Testing Instructions
+${generateTesting(testing)}
+<a name="questions"/>
     
-    ## Questions
-    Contact me with any additional questions either via my GitHub or email: 
-    * GITHUB: https://www.github.com/${gitHub}
-    * EMAIL: <mailto:${email}>
-    ### @${new Date().getFullYear()} ${name}
+## Questions
+Contact me with any additional questions either via my GitHub or email: 
+* GITHUB: https://www.github.com/${gitHub}
+* EMAIL: <mailto:${email}>
+### @${new Date().getFullYear()} ${name}
     
-    `;  
+`;  
+
 };
